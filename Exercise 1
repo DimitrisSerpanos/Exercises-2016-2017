@@ -1,0 +1,27 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+print 'Exercise 1'
+
+keimeno=raw_input ("Πληκτρολογήστε το κείμενό σας:")
+
+while len(keimeno)==0:
+   
+
+   keimeno=raw_input ("Πληκτρολογηστε το κείμενό σας:")
+    
+print "Το κείμενό σας είναι: " +keimeno
+
+
+x=list(keimeno)
+y=len(x)
+
+for i in range (y):
+   if(x[i]== '!') and (x[y-1]!='!'):
+      del x[i]
+      l=' '.join(x)
+      print l
+   else:
+      if(x[i]!='!') and (x[y-1]=='!'):
+         l=' '.join(x)
+         print l
