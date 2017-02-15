@@ -1,1 +1,23 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+print 'Exercise 3'
+
+keimeno=raw_input ("Πληκτρολογήστε το κείμενό σας:")
+
+while len(keimeno)==0:
+   
+
+   keimeno=raw_input ("Πληκτρολογηστε το κείμενό σας:")
+    
+lista=list(keimeno)
+megethos=len(lista)
+
+
+for i in range (megethos):
+   if (lista[i]== "0"):
+      x=lista[i]
+      del (lista[i])
+
+print lista[i] 
 
